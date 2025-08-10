@@ -18,7 +18,7 @@ function handleOrientation() {
 
 screen.orientation.addEventListener('change', handleOrientation);
 
-d.addEventListener('keydown', ({ key }) => {
+document.addEventListener('keydown', ({ key }) => {
   if (key === 'ArrowLeft') {
     window.history.back()
   }
