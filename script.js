@@ -17,3 +17,9 @@ function handleOrientation() {
 }
 
 screen.orientation.addEventListener('change', handleOrientation);
+
+d.addEventListener('keydown', ({ key }) => {
+  if (key === 'ArrowLeft') {
+    location.href = window.history.back();
+  }
+});
